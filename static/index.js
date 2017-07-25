@@ -70,6 +70,7 @@ function connect() {
 
     websock.onmessage = function(event) {
         var data = JSON.parse(event.data);
+        status('Last spoke: ' + data['speak']);
         speak(data['speak']);
     }
 }
