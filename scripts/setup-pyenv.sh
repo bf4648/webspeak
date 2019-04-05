@@ -5,6 +5,7 @@ install_pyenv() {
 	pyenv virtualenv 3.4.0 web-speak-3.4.0
 	pyenv activate web-speak-3.4.0
 	pyenv rehash
+	# pip3 install aiohttp==0.14.4
 }
 
 main() {
